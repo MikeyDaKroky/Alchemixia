@@ -1,0 +1,164 @@
+<mxfile host="65bd71144e">
+    <diagram id="JxoWl-Cnqk7XaCYEc0Fn" name="Page-1">
+        <mxGraphModel dx="146" dy="239" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#34C759;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+                    <mxGeometry x="368" y="240" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;strokeColor=#FFFFFF;" edge="1" parent="1" source="3" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;b&gt;&lt;font color=&quot;#ffffff&quot;&gt;Analytical Strategy Methods&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="378" y="240" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;b&gt;&lt;font color=&quot;#ffffff&quot;&gt;Physical Analysis&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#34C759;" vertex="1" parent="1">
+                    <mxGeometry x="88" y="390" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;b&gt;&lt;font color=&quot;#ffffff&quot;&gt;Wet Analysis&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#34C759;" vertex="1" parent="1">
+                    <mxGeometry x="368" y="390" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;b&gt;&lt;font color=&quot;#ffffff&quot;&gt;Instrumental Analysis&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#34C759;" vertex="1" parent="1">
+                    <mxGeometry x="638" y="390" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=3;strokeColor=#FFFFFF;" edge="1" parent="1" source="3" target="4">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="278" y="360" as="sourcePoint"/>
+                        <mxPoint x="188" y="340" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="" style="group;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;labelBackgroundColor=none;strokeWidth=1;fillColor=none;glass=0;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="368" y="450" width="120" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="27">
+                    <mxGeometry width="120" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Titration&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Gravimetry&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Volumetry&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Colorimetry&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Precipitation&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Complexation&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Redox Reactions&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#B20000;fillColor=#e51400;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" vertex="1" parent="27">
+                    <mxGeometry x="10" y="10" width="100" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="group;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="638" y="450" width="120" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="31">
+                    <mxGeometry width="120" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Spectroscopic&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Chromatographic&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Electrochemical&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Thermal&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Other&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#A50040;fillColor=#d80073;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" vertex="1" parent="31">
+                    <mxGeometry x="10" y="10" width="100" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=3;strokeColor=#FFFFFF;" edge="1" parent="1" source="3" target="9">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="418" y="370" as="sourcePoint"/>
+                        <mxPoint x="178" y="400" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" target="36">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="78" y="730" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Qualitative&lt;/b&gt;&lt;br&gt;(What it is?)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0f7f3c;" vertex="1" parent="1">
+                    <mxGeometry x="13" y="670" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="35" target="37">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Quantitative&lt;/b&gt;&lt;br&gt;(How much?)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0F7F3C;" vertex="1" parent="1">
+                    <mxGeometry x="158" y="670" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="&lt;p align=&quot;justify&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp; &amp;nbsp; Filtration&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Sedimentation&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Crystalisation&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0f7f3c;" vertex="1" parent="1">
+                    <mxGeometry x="23" y="750" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="&lt;p style=&quot;text-align:justify;text-justify:inter-ideograph;&quot; align=&quot;justify&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Chromatography&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Centrifugation&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Distillation&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0F7F3C;" vertex="1" parent="1">
+                    <mxGeometry x="163" y="750" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=3;strokeColor=#FFFFFF;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="88" y="550" as="sourcePoint"/>
+                        <mxPoint x="48" y="670" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeWidth=3;strokeColor=#FFFFFF;" edge="1" parent="1" target="35">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="208" y="550" as="sourcePoint"/>
+                        <mxPoint x="328" y="630" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" source="44" target="47" parent="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Qualitative&lt;/b&gt;&lt;br&gt;(What it is?)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0F7F3C;" vertex="1" parent="1">
+                    <mxGeometry x="298" y="670" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" source="46" target="48" parent="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Quantitative&lt;/b&gt;&lt;br&gt;(How Much?)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0F7F3C;" vertex="1" parent="1">
+                    <mxGeometry x="438" y="670" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="&lt;p style=&quot;text-indent:5,0000pt;mso-char-indent-count:0,5000;text-align:justify;&lt;br/&gt;text-justify:inter-ideograph;&quot; align=&quot;justify&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp; Precipitation&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Complexation&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Redox Reaction&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0F7F3C;" vertex="1" parent="1">
+                    <mxGeometry x="303" y="750" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="&lt;p style=&quot;text-indent:15,0500pt;mso-char-indent-count:1,5000;text-align:justify;&lt;br/&gt;text-justify:inter-ideograph;&quot; align=&quot;justify&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;Titration&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Gravimetry&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;Volumetry&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0F7F3C;" vertex="1" parent="1">
+                    <mxGeometry x="443" y="750" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=3;strokeColor=#FFFFFF;" edge="1" target="44" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="368" y="550" as="sourcePoint"/>
+                        <mxPoint x="558" y="490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="50" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeWidth=3;strokeColor=#FFFFFF;" edge="1" target="46" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="488" y="550" as="sourcePoint"/>
+                        <mxPoint x="608" y="630" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="51" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" source="52" target="55" parent="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Qualitative&lt;/b&gt;&lt;br&gt;(What it is?)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0F7F3C;" vertex="1" parent="1">
+                    <mxGeometry x="568" y="670" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" source="54" target="56" parent="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Quantitative&lt;/b&gt;&lt;br&gt;(How much?)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0F7F3C;" vertex="1" parent="1">
+                    <mxGeometry x="708" y="670" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;span&gt;I&lt;/span&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri;&quot;&gt;R, UV-Vis, NMR,&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri;&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;XRF, ICP, CE&lt;/font&gt;&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0F7F3C;" vertex="1" parent="1">
+                    <mxGeometry x="573" y="750" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="&lt;p style=&quot;text-align:justify;text-justify:inter-ideograph;&quot; align=&quot;justify&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;AAS, MS, GC, LC,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;HPLC, IC&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri; color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0F7F3C;" vertex="1" parent="1">
+                    <mxGeometry x="713" y="750" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=3;strokeColor=#FFFFFF;" edge="1" target="52" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="638" y="550" as="sourcePoint"/>
+                        <mxPoint x="828" y="490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="58" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeWidth=3;strokeColor=#FFFFFF;" edge="1" target="54" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="758" y="550" as="sourcePoint"/>
+                        <mxPoint x="878" y="630" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="63" value="" style="group;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="88" y="450" width="120" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="63">
+                    <mxGeometry width="120" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri;&quot;&gt;Chromatography&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri;&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri;&quot;&gt;Filtration&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri;&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri;&quot;&gt;Sedimentation&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri;&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri;&quot;&gt;Crystallisation&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri;&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri;&quot;&gt;Distillation&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri;&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri;&quot;&gt;Evaporation&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;font-family: Calibri;&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#006EAF;fillColor=#1ba1e2;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" vertex="1" parent="63">
+                    <mxGeometry x="10" y="10" width="100" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,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;" vertex="1" parent="1">
+                    <mxGeometry x="312" y="20" width="226" height="226" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NUST, NUST Zim, nust student portal">
+    <meta name="keywords" content="Chemistry, undergraduate, applied chemistry ">
+    <meta name="location" content="zimbabwe, bulawayo, nust, gwanda road, southwold, banbury"> 
+    <meta name="author" content="Michael Mthulisi Ngwenya/ALCHEMIC_kroky">
+
+    <title>Alchemixia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <div>
+        <a><b><h1>Alchemixia</h1></b></a>
+    </div>
+</header>
+
+<body>
+    <!-- Overlay for clicking outside the nav to close -->
+    <div id="overlay" class="overlay" onclick="closeNav()"></div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">☰</a>
+        <a href="#" id="home" onclick="toggleContent('homePage')">Home</a>
+        <a href="#" id="mindLab" onclick="toggleContent('mindLabContent')">Mind Lab</a>
+        <a href="#" id="calculators" onclick="toggleContent('calculatorsContent')">Calculators</a>
+        <a href="#" id="Cali-Graph" onclick="toggleContent('graphContent')">Calibration Curve</a>
+        <a href="#" id="notes" onclick="toggleContent('notesContent')">Notes</a>
+        <a href="#" id="resources" onclick="toggleContent('resourcesContent')">Resources</a>
+        <!-- <a href="#" id="labstore" onclick="toggleContent('labStoreContent')">Lab Store</a>
+        <a href="#" id="LabHints" onclick="toggleContent('labHintsContent')">Lab Hints</a> -->
+
+    </div>
+
+    <div id="myMainnav" class="mainnav">
+        <button id="menuBtn" onclick="toggleNav()"><b>☰ Menu</button>
+        <button id="juviaAi" onclick="toggleContent('juviaAiContent')" title="...work in progress..."><b>Chatbot</button>
+        <button id="prjBtn" onclick="toggleContent('projectContent')"><b>Project</button>
+        <button id="aboutMe" onclick="toggleContent('aboutMeContent')"><b>About Me</button>
+    </div>
+
+    <div id="content">
+        <!-- Content sections -->
+        <div id="homePage" class="content">
+            <h1>Welcome to Alchemixia</h1>
+            <p><h3>Your one-stop platform for Chemistry resources, practicals, and slides.</h3></p>
+                <button onclick="toggleContent('labStoreContent')"><b>Lab Resources </button>
+                <button onclick="toggleContent('notesContent')"><b>View Notes</button>
+                <button onclick="toggleContent('mindLabContent')"><b>Mind Lab<Label></Label></button>
+            
+        </div>
+
+        <div id="calculatorsContent" class="content">
+                <div id="dilutionContent">
+                    <h1>Dilution Calculator</h2>
+                    <p id="formula" title="B and A can be replaced by 2 and 1 respectively">Formula: C<sub>B</sub>V<sub>B</sub> = C<sub>A</sub>V<sub>A</sub> </p>
+                    <input id="cbefore" type="text" placeholder="Concentration before" title="Concentration before">
+                    <input id="vbefore" type="text" placeholder="Volume before" title="Volume before">
+                    <input id="cafter" type="text" placeholder="Concentration After" title="Concentration After">
+                    <input id="vafter" type="text" placeholder="Volume After" title="Volume After">
+                    <button onclick="calculateDilution()">Calculate</button>
+                    <p id="dilution-result"></p>  
+                    <p id="water-required"></p>  <!-- New element for displaying the amount of water needed -->
+                </div>
+
+                <div id="soluteContent">
+                    <h1>Solute to solution</h2>
+                    <p id="formula" title="...combination of n=cv and n=m/Mr...">grams to weigh = Liters to Dilute × Concentration × Formula Weight</p>
+                    <input id="gramsSolute" type="number" placeholder="grams to weigh" title="grams">
+                    <input id="volumeSolute" type="number" placeholder="Liter to Dilute" title="Volume in liters">
+                    <input id="concentrationSolute" type="number" placeholder="Concentration" title="Concentration">
+                    <input id="weightSolute" type="number" placeholder="Formula Weight" title="FW/Mr">
+                    <button onclick="calculateSolute()">Calculate</button>
+                    <p id="solute-result"></p>
+                </div>
+        </div>
+
+        
+        <div id="notesContent" class="content">
+            <p><h1>Notes</h1></p>
+            <button class="github-btn" onclick="toggleSubfolder('yearOne')">Year One</button>
+                <div id="yearOne" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('noteInorganicChemOne')">Inorganic Chemistry I</button>
+                    <div id="noteInorganicChemOne" class="subfolder">
+                        <a href="https://drive.google.com/file/d/1pkk1w4olNv1wllA-KZztVOBKryBPWHgu/view?usp=sharing
+                        " target="_blank">View Inorganic Chemistry I</a>
+                        <a title="8.22 MB includes slides and practicals" href="\notes\year 1\inorganic chemistry I\download\inorganic.zip" download>Download Inorganic Chemistry I</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteInorganicChemTwo')">Inorganic Chemistry II</button>
+                    <div id="noteInorganicChemTwo" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Inorganic Chemistry II</a>
+                        <a href="path/to/physics_1.pdf" download>Download Inorganic Chemistry II</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteOrganicChemOne')">Organic Chemistry I</button>
+                    <div id="noteOrganicChemOne" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Organic Chemistry I</a>
+                        <a href="path/to/physics_1.pdf" download>Download Organic Chemistry I</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteOrganicChemTwo')">Organic Chemistry II</button>
+                    <div id="noteOrganicChemTwo" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Organic Chemistry II</a>
+                        <a href="path/to/physics_1.pdf" download>Download Organic Chemistry II</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteAnalyticalChemI')">Analytical Chemistry I</button>
+                    <div id="noteAnalyticalChemI" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Analytical Chemistry I</a>
+                        <a href="path/to/physics_1.pdf" download>Download Analytical Chemistry I</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteModernPhysics')">Modern Physics</button>
+                    <div id="noteModernPhysics" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Modern Physics</a>
+                        <a href="path/to/physics_1.pdf" download>Download Modern Physics</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteMathsForScienceI')">Maths For Science I</button>
+                    <div id="noteMathsForScienceI" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Maths For Science I</a>
+                        <a href="path/to/physics_1.pdf" download>Download Maths For Science I</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteMathsForScienceII')">Maths For Science II</button>
+                    <div id="noteMathsForScienceII" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Maths For Science II</a>
+                        <a href="path/to/physics_1.pdf" download>Download Maths For Science II</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteEngineering')">Engineering Materials</button>
+                    <div id="noteEngineering" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Engineering Materials</a>
+                        <a href="path/to/physics_1.pdf" download>Download Engineering Materials</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteComputer')">Computer Science</button>
+                    <div id="noteComputer" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Computer Science</a>
+                        <a href="path/to/physics_1.pdf" download>Download Computer Science</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteDatabase')">Database Concepts</button>
+                    <div id="noteDatabase" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Database Concepts</a>
+                        <a href="https://drive.google.com/file/d/1pkk1w4olNv1wllA-KZztVOBKryBPWHgu/view?usp=sharing
+                        " download>Download Database Concepts</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteCommunication')">Communication Skills</button>
+                    <div id="noteCommunication" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Communication Skills</a>
+                        <a href="https://drive.google.com/file/d/1zo36qcumpbcPkAC4fL0VZ3dSVStdv7GM/view?usp=sharing
+                        " download>Download Communication Skills</a>
+                    </div>
+                </div>
+    
+                <button class="github-btn" onclick="toggleSubfolder('yearTwo')">Year Two</button>
+                <div id="yearTwo" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('notePhysicalChemOne')">Physical Chemistry I</button>
+                    <div id="notePhysicalChemOne" class="subfolder">
+                        <a href="path/to/inorganic_chemistry_1.pdf" target="_blank">View Physical Chemistry I</a>
+                        <a href="path/to/inorganic_chemistry_1.pdf" download>Download Physical Chemistry I</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('notePhysicalChemTwo')">Physical Chemistry II</button>
+                    <div id="notePhysicalChemTwo" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Physical Chemistry II</a>
+                        <a href="path/to/physics_1.pdf" download>Download Physical Chemistry II</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('notePolymerChemOne')">Polymer Chemistry I</button>
+                    <div id="notePolymerChemOne" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Polymer Chemistry I</a>
+                        <a href="path/to/physics_1.pdf" download>Download Polymer Chemistry I</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('notePolymerChemTwo')">Polymer Chemistry II</button>
+                    <div id="notePolymerChemTwo" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Polymer Chemistry II</a>
+                        <a href="path/to/physics_1.pdf" download>Download Polymer Chemistry II</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteAnalyticalChemII')">Analytical Chemistry II</button>
+                    <div id="noteAnalyticalChemII" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Analytical Chemistry II</a>
+                        <a href="path/to/physics_1.pdf" download>Download Analytical Chemistry II</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('notesAppliedStatistics')">Applied Statistics</button>
+                    <div id="notesAppliedStatistics" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Applied Statistics</a>
+                        <a href="path/to/physics_1.pdf" download>Download Applied Statistics</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteIndustrialInorganicOne')">Industrial Inorganic I</button>
+                    <div id="noteIndustrialInorganicOne" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Industrial Inorganic I</a>
+                        <a href="path/to/physics_1.pdf" download>Download Industrial Inorganic I</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteIndustrialOrganicOne')">Industrial Organic I</button>
+                    <div id="noteIndustrialOrganicOne" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Industrial Organic I</a>
+                        <a href="path/to/physics_1.pdf" download>Download Industrial Organic I</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteQualityAssurance')">Quality Assurance</button>
+                    <div id="noteQualityAssurance" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Quality Assurance</a>
+                        <a href="path/to/physics_1.pdf" download>Download Quality Assurance</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteSyntheticMethods')">Synthetic Methods</button>
+                    <div id="noteSyntheticMethods" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Synthetic Methods</a>
+                        <a href="path/to/physics_1.pdf" download>Download Synthetic Methods</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteTransportPhenomena')">Transport Phenomena</button>
+                    <div id="noteTransportPhenomena" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Transport Phenomena</a>
+                        <a href="path/to/physics_1.pdf" download>Download Transport Phenomena</a>
+                    </div>
+                    <button class="github-btn" onclick="toggleSubfolder('noteUnitOperations')">Unit Operations</button>
+                    <div id="noteUnitOperations" class="subfolder">
+                        <a href="path/to/physics_1.pdf" target="_blank">View Unit Operations</a>
+                        <a href="path/to/physics_1.pdf" download>Download Unit Operations</a>
+                    </div>
+                </div>
+
+                <button class="github-btn" onclick="toggleSubfolder('yearThree')">Year Three</button>
+                <div id="yearTwo" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('organicChemTwo')">Organic Chemistry II</button>
+                    <div id="organicChemTwo" class="subfolder">
+                        <a href="path/to/organic_chemistry_2.pdf" target="_blank">Organic Chemistry II View</a>
+                        <a href="path/to/organic_chemistry_2.pdf" download> Organic Chemistry II Download</a>
+                    </div>
+                </div>
+                <button class="github-btn" onclick="toggleSubfolder('yearFour')">Year Four</button>
+                <div id="yearTwo" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('organicChemTwo')">Project Management</button>
+                    <div id="projectManagement" class="subfolder">
+                        <a href="path/to/organic_chemistry_2.pdf" target="_blank">View Organic Chemistry II</a>
+                        <a href="path/to/organic_chemistry_2.pdf" download>Download Organic Chemistry II</a>
+                    </div>
+                </div>
+    
+    
+                <!-- Add more years and subjects as needed -->
+        </div>
+        
+        <div id="mindLabContent" class="content">
+            <p><h1>Mind Lab</h1></p> 
+
+            <div class="mindLab-container">
+                <img src="./images/mindlab1.svg" alt="Analytical Strtategy Methods">
+            </div>
+            <div class="mindLab-content">
+                <div class="analytical-bar">
+                    Analytical procedures are determined by Qualitative (indentification) and Quantitative (how much) analysis.
+                </div>
+                <br><br>
+                <h1>What are they?</h1>
+                <br><br>
+                <p id="three-methods">They are divided into three methods:
+                    <ul id="listing-methods">
+                        <li>1. Physical method</li>
+                        <li>2. Wet analysis method</li>
+                        <li>3. Instrumental method</li>
+                    </ul>
+                </p>
+                <br>
+                <div class="quanta">
+                    Qualitative analysis is identification. It is an analysis carried out to determine only the identity of 
+                    a pure analyte, the identity of an analyte in a matrix, or the identity of several or all components of a mixture. 
+                    Quantitative analysis, on the other hand, is the analysis of a material for how much of one or more components is present.
+                </div>
+                <br>
+                <div class="quanta-two">
+                    Analysis procedures are classified into procedures that involve physical properties, wet chemical analysis procedures, and 
+                    instrumental chemical analysis procedures.
+                    <br><br>Physical properties are especially useful for identification, but may also be useful for quantitative analysis in cases where
+                    the value of a property, such as specific gravity or refractive index, varies with the quantity of an analyte in a mixture. 
+                    Wet chemical analysis usually involves chemical reactions or classical reaction stoichiometry, but no electronic instrumentation 
+                    beyond a weighing device. <br><br>Wet chemical analysis techniques are classical techniques, meaning they have been in use in the analytical 
+                    laboratory for many years, before electronic devices came on the scene. If executed properly, they have a high degree of inherent 
+                    accuracy and precision, but they take more time to execute.
+                    <br><br>Instrumental analysis can also involve chemical reactions, but it always involves modern sophisticated electronic instrumentation. 
+                    Instrumental analysis techniques are high-tech techniques, often utilizing the ultimate in complex hardware and software. While sometimes 
+                    not as precise as a carefully executed wet chemical method, instrumental analysis methods are fast and can offer a much greater scope and 
+                    practicality to the analysis. In addition, instrumental methods are generally used to determine the minor constituents or constituents that 
+                    are present in low levels, rather than the major constituents of a sample.
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div id="resourcesContent" class="content">
+            <p><h1>Resources</h1></p>
+            <button class="github-btn" onclick="toggleSubfolder('inorganicChemistry')">Inorganic Chemistry</button>
+                <div id="inorganicChemistry" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resInorganic')">View Content</button>
+                    <div id="resInorganic" class="subfolder">
+                        <a href="https://drive.google.com/file/d/1Xh-BAD9UfjuL82hH9dm1LwcALQtJpVc-/view?usp=sharing" target="_blank">View Inorganic Chemistry 2022</a>
+                        <a href=".\tests\testOne\SCH2114 Industrial Inorganic.zip" download>Download Inorganic Chemistry Resources Zip file</a>
+                    </div>
+                </div>  
+            <button class="github-btn" onclick="toggleSubfolder('inorganicChemistryII')">Inorganic Chemistry II</button>
+                <div id="inorganicChemistryII" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resInorganicII')">View Content</button>
+                    <div id="resInorganicII" class="subfolder">
+                        <a href="https://drive.google.com/file/d/1Fh478fQcWcnu4uIBKlr3uhGFwhySKiId/view?usp=sharing" target="_blank">View Inorganic Chemistry II 2023</a>
+                        <a href=".\tests\testOne\SCH2114 Industrial Inorganic.zip" download>Download Inorganic Chemistry II Resources Zip file</a>
+                    </div>
+                </div>     
+            <button class="github-btn" onclick="toggleSubfolder('analyticalChemistryI')">Analytical I</button>
+                <div id="analyticalChemistryI" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resAnalyticalI')">View Content</button>
+                    <div id="resAnalyticalI" class="subfolder">
+                        <a href="https://drive.google.com/file/d/1RYyeZ0MpsjY-dXMXSz855rC9tc6xlSkU/view?usp=sharing
+                        " target="_blank">View Analytical Chemistry I 2023</a>
+                        <a href=".\tests\testOne\SCH2114 Industrial Inorganic.zip" download>Download Analytical Chemistry I Resources Zip file</a>
+                    </div>
+                </div>     
+            <button class="github-btn" onclick="toggleSubfolder('analyticalChemistryII')">Analytical II</button>
+                <div id="analyticalChemistryII" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resAnalyticalII')">View Content</button>
+                    <div id="resAnalyticalII" class="subfolder">
+                        <a href="https://drive.google.com/file/d/1mxluN6QhmN78-2-tCnGWkZJWD5aDzuU8/view?usp=sharing
+                        " target="_blank">View Analytical Chemistry II 2023</a>
+                        <a href=".\tests\testOne\SCH2114 Industrial Inorganic.zip" download>Download Analytical Chemistry II Resources Zip file</a>
+                    </div>
+                </div> 
+            <button class="github-btn" onclick="toggleSubfolder('analyticalChemistryIII')">Analytical III</button>
+                <div id="analyticalChemistryIII" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resAnalyticalIII')">View Content</button>
+                    <div id="resAnalyticalIII" class="subfolder">
+                        <a href="path/to/organic_chemistry_2.pdf" target="_blank">View Analytical Chemistry III 2025</a>
+                        <a href=".\tests\testOne\SCH2114 Industrial Inorganic.zip" download>Download Analytical Chemistry III Resources Zip file</a>
+                    </div>
+                </div> 
+            <button class="github-btn" onclick="toggleSubfolder('mordenPhysics')">Modern Physics</button>
+                <div id="mordenPhysics" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resModernPhysics')">View Content</button>
+                    <div id="resModernPhysics" class="subfolder">
+                        <a href="path/to/organic_chemistry_2.pdf" target="_blank">View Modern Physics 2022</a>
+                        <a href=".\tests\testOne\SCH2114 Industrial Inorganic.zip" download>Download Modern Physics Resources Zip file</a>
+                    </div>
+                </div>  
+            <button class="github-btn" onclick="toggleSubfolder('physicalChemistryI')">Physical Chemistry I</button>
+                <div id="physicalChemistryI" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resPhysicalI')">View Content</button>
+                    <div id="resPhysicalI" class="subfolder">
+                        <a href="https://drive.google.com/file/d/1bmUOvPnXnAZ_4HBBKz-VsnY9QTV4Z9gU/view?usp=sharing" target="_blank">View Physical Chemistry I 2023</a>
+                        <a title="2.97 MB" href="https://drive.google.com/file/d/1X9NTm2ILJjAVj0HB7vZXdr87ka0-OUR_/view?usp=sharing" download>Download Physical Chemistry I Resources Zip file</a>
+                    </div>
+                </div>  
+            <button class="github-btn" onclick="toggleSubfolder('physicalChemistryII')">Physical Chemistry II</button>
+                <div id="physicalChemistryII" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resPhysicalII')">View Content</button>
+                    <div id="resPhysicalII" class="subfolder">
+                        <a href="https://drive.google.com/file/d/1Bk-eS31c2YMXHooaSdHzJopLOfQgEdbf/view?usp=sharing
+                        " target="_blank">View Physical Chemistry II 2024</a>
+                        <a href="https://drive.google.com/file/d/1Bk-eS31c2YMXHooaSdHzJopLOfQgEdbf/view?usp=sharing
+                        " download>Download Physical Chemistry II Resources Zip file</a>
+                    </div>
+                </div>
+            <button class="github-btn" onclick="toggleSubfolder('organicChemistryI')">Organic Chemistry I</button>
+                <div id="organicChemistryI" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resOrganicI')">View Content</button>
+                    <div id="resOrganicI" class="subfolder">
+                        <a href="https://drive.google.com/file/d/1nbdJDl6jCHBWqcuSrVgsr3N_kowCCw4q/view?usp=sharing" target="_blank">View Organic Chemistry I 2022</a>
+                        <a href="https://drive.google.com/file/d/1b2jBQzbH6ZqGzBdpJ2MltkHcWYdXTtHj/view?usp=sharing" download>Download Organic Chemistry I Resources Zip file</a>
+                    </div>
+                </div>  
+            <button class="github-btn" onclick="toggleSubfolder('organicChemistryII')">Organic Chemistry II</button>
+                <div id="organicChemistryII" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resOrganicII')">View Content</button>
+                    <div id="resOrganicII" class="subfolder">
+                        <a href="path/to/organic_chemistry_2.pdf" target="_blank">View Organic Chemistry II 2022</a>
+                        <a href=".\tests\testOne\SCH2114 Industrial Inorganic.zip" download>Download Organic Chemistry II Resources Zip file</a>
+                    </div>
+                </div>  
+            <button class="github-btn" onclick="toggleSubfolder('polymerChemistryI')">Polymer Chemistry I</button>
+                <div id="polymerChemistryI" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resPolymerI')">View Content</button>
+                    <div id="resPolymerI" class="subfolder">
+                        <a href="https://drive.google.com/file/d/1M70P3G3qqbBRAMf2MqBj0qCB8HL_8wdk/view?usp=sharing
+                        " target="_blank">View Polymer Chemistry I 2023</a>
+                        <a href="https://drive.google.com/file/d/1NADzLu5L6iyF3tySOvXdxg4EezptAlFJ/view?usp=sharing
+                        " download>Download Polymer Chemistry I Resources Zip file</a>
+                    </div>
+                </div> 
+            <button class="github-btn" onclick="toggleSubfolder('polymerChemistryII')">Polymer Chemistry II</button>
+                <div id="polymerChemistryII" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resPolymerII')">View Content</button>
+                    <div id="resPolymerII" class="subfolder">
+                        <a href="https://drive.google.com/file/d/1iRgnWHIYKFX02wuAoqLbTGQZh-7Au7Ts/view?usp=sharing
+                        " target="_blank">View Polymer Chemistry II 2024</a>
+                        <a href="https://drive.google.com/file/d/1IIOR3wod-31E5CeEbT5IP0K9NVtmhqRa/view?usp=sharing
+                        " download>Download Polymer Chemistry II Resources Zip file</a>
+                    </div>
+                </div> 
+            <button class="github-btn" onclick="toggleSubfolder('industrialInorganicI')">Industrial Inorganic I</button>
+                <div id="industrialInorganicI" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resIndustrialInorganicI')">View Content</button>
+                    <div id="resIndustrialInorganicI" class="subfolder">
+                        <a href="path/to/organic_chemistry_2.pdf" target="_blank">View Industrial Inorganic Chemistry I 2023</a>
+                        <a href=".\tests\testOne\SCH2114 Industrial Inorganic.zip" download>Download Industrial Inorganic Chemistry I Resources Zip file</a>
+                    </div>
+                </div> 
+            <button class="github-btn" onclick="toggleSubfolder('engineeringMaterials')">Engineering Materials</button>
+                <div id="engineeringMaterials" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resEngineeringMaterials')">View Content</button>
+                    <div id="resEngineeringMaterials" class="subfolder">
+                        <a href="https://drive.google.com/file/d/10QU98SAyZG4LAEgrX5-XZhnnvGogX8_6/view?usp=drive_link
+                        " target="_blank">View Engineering Materials 2023</a>
+                        <a href=".\tests\testOne\SCH2114 Industrial Inorganic.zip" download>Download Engineering Materials Resources Zip file</a>
+                    </div>
+                </div> 
+            <button class="github-btn" onclick="toggleSubfolder('qamc')">Quality Assurance</button>
+                <div id="qamc" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resQamc')">View Content</button>
+                    <div id="resQamc" class="subfolder">
+                        <a href="https://drive.google.com/file/d/1Lx3QUVm2Wj0EJOx7UpErJv_x1z6JNWuQ/view?usp=sharing
+                        " target="_blank">View Quality Assurance Management And Control 2024</a>
+                        <a href="https://drive.google.com/file/d/19gEgKteJy3GEU75yzkvL5DTXHyiAZZAM/view?usp=sharing
+                        " download>Download Quality Assurance Management And Control Resources Zip file</a>
+                    </div>
+                </div> 
+            <button class="github-btn" onclick="toggleSubfolder('smaI')">Maths for Science I</button>
+                <div id="smaI" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resSmaI')">View Content</button>
+                    <div id="resSmaI" class="subfolder">
+                        <a href="https://drive.google.com/file/d/1Pk3ZWNebJPNdgMr9W-MV0EGtSPgvyXu_/view?usp=sharing
+                        " target="_blank">View Maths for Science I 2022</a>
+                        <a href=".\tests\testOne\SCH2114 Industrial Inorganic.zip" download>Download Maths for Science I Resources Zip file</a>
+                    </div>
+                </div> 
+            <button class="github-btn" onclick="toggleSubfolder('smaI')">Maths for Science II</button>
+                <div id="smaII" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resSmaII')">View Content</button>
+                    <div id="resSmaII" class="subfolder">
+                        <a href="path/to/organic_chemistry_2.pdf" target="_blank">View Maths for Science II 2023</a>
+                        <a href=".\tests\testOne\SCH2114 Industrial Inorganic.zip" download>Download Maths for Science II Resources Zip file</a>
+                    </div>
+                </div> 
+            <button class="github-btn" onclick="toggleSubfolder('sors')">SORS</button>
+                <div id="sors" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resSors')">View Content</button>
+                    <div id="resSors" class="subfolder">
+                        <a href="https://drive.google.com/file/d/1rE9eRcqX3b7S3jLlR2klPB71ziovVQKE/view?usp=sharing
+                        " target="_blank">View Applied Statistcs SORS 2023</a>
+                        <a href=".\tests\testOne\SCH2114 Industrial Inorganic.zip" download>Download Applied Statistcs SORS Resources Zip file</a>
+                    </div>
+                </div>
+                <button class="github-btn" onclick="toggleSubfolder('transPhe')">Transport Phenomena</button>
+                <div id="transPhe" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resTransPhe')">View Content</button>
+                    <div id="resTransPhe" class="subfolder">
+                        <a href="none" target="_blank">View Transport Phenomena 2023</a>
+                        <a href="https://drive.google.com/file/d/1Nw9OoFfcNIEOdHYMY5Z5GhVGyOxD_bV9/view?usp=sharing
+                        " download>Download Applied Statistcs SORS Resources Zip file</a>
+                    </div>
+                </div> 
+                <button class="github-btn" onclick="toggleSubfolder('unit')">Unit Operations</button>
+                <div id="unit" class="subfolder">
+                    <button class="github-btn" onclick="toggleSubfolder('resUnit')">View Content</button>
+                    <div id="resUnit" class="subfolder">
+                        <a href="https://drive.google.com/file/d/1Xjw2Wx7A_9k-7HMvw1j00nP0_POvN1Dr/view?usp=sharing
+                        " target="_blank">View Unit Operations 2023</a>
+                        <a href="https://drive.google.com/file/d/1_FKiSZz30nYGK5UTRhEA3UmdTUqoPBkp/view?usp=sharing
+                        " download>Download Unit Operations Zip file</a>
+                    </div>
+                </div> 
+        </div>   
+
+        <div id="labStoreContent" class="content">Content to be scrapped</div>
+
+        <div id="graphContent" class="content"><h1>Calibration Curve</h1>
+            <div class="input-container">
+                <label for="graphTitle">Graph Title:</label>
+                <input type="text" id="graphTitle" placeholder="e.g., Calibration Curve">
+        
+                <label for="xLabel">X-axis Label:</label>
+                <input type="text" id="xLabel" placeholder="e.g., Concentration">
+        
+                <label for="yLabel">Y-axis Label:</label>
+                <input type="text" id="yLabel" placeholder="e.g., Absorbance">
+        
+                <label for="dataInput">Data Points (x, y):</label>
+                <textarea id="dataInput" rows="4" placeholder="Enter values as 'x,y' per line (e.g., 1,0.2)"></textarea>
+            </div>
+        
+            <div id="plot"></div>
+            <button onclick="plotData()">Plot Calibration Curve</button>
+            <button onclick="savePlot()">Save as PNG</button>
+        </div>
+        
+        <div id="labHintsContent" class="content">...hints and tricks...
+            <div>
+
+            </div>
+        </div>
+
+
+        <div id="juviaAiContent" class="content"><h1>Kroky Chatbot</h1>
+    
+            <iframe
+                src="https://www.chatbase.co/chatbot-iframe/yDB6VTcErL3glS2maaa8e"
+                width="100%"
+                style="height: 100%; min-height: 700px"
+                frameborder="0"
+                ></iframe>
+
+        </div>
+
+        <div id="projectContent" class="content"><h1>Project Section</h1>
+            <div>...still in the pipeworks...</div>
+        </div>
+
+        <div id="aboutMeContent" class="content" style="font-family: 'Consolas', sans-serif;">
+            <h1>...behold the creator from the Department of Applied Chemistry...</h1>
+        
+            <div class="card">
+                <div class="card-front">
+                    <img src="/images/kroky.png" alt="ALCHEMIC_kroky" title="ALCHEMIC_kroky">
+                    <h2>Michael Mthulisi Ngwenya</h2>
+                </div>
+                <div class="card-back">
+                    <h4>Assay Information</h4>
+                    <ul>
+                        <li><a href="mailto:mthulisigarwe2000@gmail.com">mthulisigarwe2000@gmail.com</a></li>
+                        <li>Dabbles in Anime, Chemistry and Ethanol</li>
+                    </ul>
+                    <div class="danger-levelSpace" title="Mastered Ultra-Instinct">
+                        <label>Danger Level:</label>
+                        <meter value="11" min="0" max="10" low="4" high="7" optimum="0" title="Lethal Predator"></meter>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+    <!-- Load D3.js and html2canvas libraries -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
